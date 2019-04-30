@@ -73,3 +73,23 @@ input[type='submit']
 			&:focus,
 			&:hover
 				color: $color-primary
+
+	&.button-secondary
+		background-color: $color-tertiary
+		border-color: $color-tertiary
+		color: $color-initial
+
+		&:focus,
+		&:hover
+			background-color: $color-quaternary
+			border-color: $color-quaternary
+			color: $color-initial
+
+		&[disabled]
+			cursor: default
+			opacity: .5
+
+			&:focus,
+			&:hover
+				background-color: $color-tertiary
+				border-color: $color-tertiary	

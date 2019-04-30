@@ -70,7 +70,7 @@
 	},
 	"scripts": {
 		"start": "run-p build watch serve",
-		"build": "run-s clean sass autoprefixer banner",
+		"build": "run-s clean sass autoprefixer",
 		"clean": "rimraf dist",
 		"sass": "node-sass --output-style expanded src/milligram.sass dist/milligram.css && node-sass --output-style compressed src/milligram.sass dist/milligram.min.css",
 		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
